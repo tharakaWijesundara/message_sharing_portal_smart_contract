@@ -1,0 +1,130 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* margin-top: 64px; */
+  height: 100vh;
+  align-items: center;
+  background-image: linear-gradient(#8e2de2, #4a00e0);
+}
+
+@keyframes lift {
+  0% {
+    box-shadow: 0px 0px 0px #000000;
+  }
+  25% {
+    box-shadow: 0px 0px 5px #000000;
+  }
+  50% {
+    box-shadow: 0px 0px 10px #000000;
+  }
+  80% {
+    box-shadow: 0px 0px 15px #000000;
+  }
+  100% {
+    box-shadow: 0px 0px 20px #000000;
+  }
+  /* 80% {
+    box-shadow: 0px 0px 15px #000000;
+  }
+  50% {
+    box-shadow: 0px 0px 10px #000000;
+  }
+  25% {
+    box-shadow: 0px 0px 5px #000000;
+  } */
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  background-color: black;
+  /* height: 60%; */
+  margin: 20px;
+
+  padding: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 15px;
+  background-image: linear-gradient(#be93c5, #7bc6cc);
+  animation-name: lift;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.header {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 800;
+  font-family: "Dancing Script", cursive;
+}
+
+.bio {
+  text-align: center;
+  color: rgb(186, 11, 128);
+  margin-top: 16px;
+  font-family: "Indie Flower", cursive;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.button {
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  font-family: "Michroma", sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.textarea {
+  display: block;
+  overflow: hidden;
+  resize: vertical;
+  min-height: 40px;
+  line-height: 20px;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  font-family: "Kalam", cursive;
+  font-size: 15px;
+  font-weight: 800;
+}
+.msgBox {
+  width: 90%;
+  background-color: rgb(3, 227, 153);
+  margin-top: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  font-family: "Kalam", cursive;
+  font-size: 15px;
+  font-weight: 800;
+  color: rgb(4, 0, 255);
+  box-shadow: 0px 0px 5px #000000;
+}
+.msgContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  max-height: 120px;
+  overflow-y: auto;
+  justify-content: start;
+  align-items: center;
+  padding-bottom: 15px;
+}
